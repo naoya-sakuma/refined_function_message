@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   end
   resources :users
   resources :sessions
+  resources :relationships, only: [:create, :destroy]
 end
