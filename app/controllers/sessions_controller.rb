@@ -10,5 +10,6 @@ class SessionsController < ApplicationController
     else
       flash.now[:danger] = 'ログインに失敗しました'
       render :new
+    end
   end
 end
