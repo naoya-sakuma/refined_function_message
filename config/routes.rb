@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'relationships/create'
-  get 'relationships/destroy'
+  get '/', to: 'blogs#index'
   resources :blogs do
     resources :comments
   end
